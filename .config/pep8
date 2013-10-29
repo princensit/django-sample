@@ -1,0 +1,4 @@
+[pep8]
+# E128 (continuation line under-indented for visual indent)
+max_line_length = 120
+ignore=E128

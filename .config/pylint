@@ -1,0 +1,4 @@
+[MESSAGES CONTROL]
+# W0511 (warning notes in code comments)
+# C0301 (Line too long)
+disable=W0511, C0301

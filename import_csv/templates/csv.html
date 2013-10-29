@@ -1,0 +1,11 @@
+<html>
+<head><title>CSV Attributes</title></head>
+<body>
+<h1>CSV Attributes</h1>
+<ul>
+  {% for csv in csv_list %}
+    <li><a href='{{ csv.name }}'>{{ csv.mapped_age_groups }}</a></li>
+  {% endfor %}
+</ul>
+</body>
+</html>
