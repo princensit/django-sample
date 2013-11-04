@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from import_csv.models import MyCSvModel
 
-DEMO_MAPPING = '/home/prince/codebase/sw-audience-discovery-trunk/src/main/resources/dish_demo_mapping.txt'
+DEMO_MAPPING = 'resource_files/demo_mapping.txt'
 
 
 def get_csv(request):
@@ -25,5 +25,5 @@ def get_csv(request):
     response.content = first_line.mapped_age_groups
 
     # return response
-    # return render(request, 'import_csv/templates/csv_list.html', {'csv_list': csv_list})
-    return render(request, 'csv.html')
+    # return render(request, 'import_csv/csv.html', {'csv_list': csv_list})
+    return render(request, 'import_csv/csv.html')

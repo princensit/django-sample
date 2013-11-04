@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Twitter</title>
-  <meta name="_csrf" content="{{ csrf_token }}"/>
-  <!-- default header name is X-CSRF-TOKEN -->
-  <meta name="_csrf_header" content="${_csrf.headerName}"/>
-</head>
-<body>
-<div>
+{% extends "twitter/base.html" %}
+
+{% block title %}Twitter{% endblock %}
+{% block content %}
   <div>
-    <p>
-      <strong>Work in progress !</strong>
-      <strong>Please recheck</strong>
-    </p>
+    <h1>Twitter work going on!</h1>
+    It is now <span id="runtime"></span>
   </div>
-</div>
-</body>
-</html>
+{% endblock %}
+{% block script %}
+{% endblock %}

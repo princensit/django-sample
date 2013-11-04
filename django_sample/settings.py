@@ -1,11 +1,10 @@
 # Django settings for django_sample project.
-from django import conf
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Prince Raj', 'prince.raj@joshworkz.com'),
+    ('Prince Raj', 'prince.nsit@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -15,7 +14,7 @@ DATABASES = {
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         # Or path to database file if using sqlite3.
-        'NAME': 'django',
+        'NAME': 'django-sample',
         # The following settings are not used with sqlite3:
         'USER': 'postgres',
         'PASSWORD': 'postgres',
@@ -129,6 +128,7 @@ PROJECT_APPS = (
     'import_csv',
     'sw_json',
     'twitter',
+    'snippets',
 )
 
 INSTALLED_APPS = (
@@ -144,6 +144,8 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django_jenkins',
     'debug_toolbar',
+    'south',
+    'rest_framework',
 )
 
 INSTALLED_APPS += PROJECT_APPS
@@ -219,3 +221,18 @@ DEBUG_TOOLBAR_PANELS = (
 #     'HIDE_DJANGO_SQL': False,
 #     'TAG': 'div',
 # }
+
+REST_FRAMEWORK = {
+    # Use hyperlinked styles by default.
+    # Only used if the `serializer_class` attribute is not set on a view.
+    'DEFAULT_MODEL_SERIALIZER_CLASS':
+        'rest_framework.serializers.HyperlinkedModelSerializer',
+
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    # ],
+    # 'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGINATE_BY': 10
+}

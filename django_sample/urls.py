@@ -13,4 +13,6 @@ urlpatterns = patterns('',
     url(r'^csv/', include('import_csv.urls')),
     url(r'^json/', include('sw_json.urls', namespace='sw_json')),
     url(r'^twitter/', include('twitter.urls', namespace='twitter')),
+    url(r'^snippets/', include('snippets.urls', namespace='snippets')),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 )

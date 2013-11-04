@@ -1,0 +1,17 @@
+.coverage
+htmlcov/
+coverage/
+reports
+report_coverage
+.env
+*.pyc
+*.db
+*~
+
+html/
+build/
+dist/
+*.egg-info/
+MANIFEST
+
+!.gitignore

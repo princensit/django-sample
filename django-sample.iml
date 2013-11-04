@@ -4,7 +4,7 @@
     <facet type="django" name="Django">
       <configuration>
         <option name="rootFolder" value="$MODULE_DIR$" />
-        <option name="settingsModule" value="settings.py" />
+        <option name="settingsModule" value="django_sample/settings.py" />
         <option name="manageScript" value="manage.py" />
       </configuration>
     </facet>
@@ -16,7 +16,21 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
+    <option name="templateFileTypes">
+      <list>
+        <option value="XML" />
+        <option value="XHTML" />
+        <option value="HTML" />
+      </list>
+    </option>
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/import_csv/templates" />
+        <option value="$MODULE_DIR$/sw_json/templates" />
+        <option value="$MODULE_DIR$/twitter/templates" />
+      </list>
+    </option>
   </component>
   <component name="org.twodividedbyzero.idea.findbugs">
     <option name="_basePreferences">

@@ -1,0 +1,14 @@
+id,mapped_age_groups
+1,_ALL
+2,_ALL
+3,_ALL
+4,_ALL,_11_15
+5,_ALL,_16_17
+6,_ALL,_18_24
+7,_ALL,_25_34
+8,_ALL,_35_44
+9,_ALL,_45_54
+10,_ALL,_55_64
+11,_ALL,_65_UP
+12,_ALL,_65_UP
+13,_ALL
