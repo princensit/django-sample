@@ -5,11 +5,11 @@ from twitter.models import Post
 
 class PostSerializer(serializers.HyperlinkedModelSerializer):
     owner = serializers.Field(source='owner.username')
-    highlight = serializers.HyperlinkedIdentityField(view_name='post-highlight', format='html')
+    # post = serializers.HyperlinkedIdentityField(view_name='post-detail', format='html')
 
     class Meta:
         model = Post
-        fields = ('id', 'post', 'owner', 'url')
+        fields = ('owner', 'post')
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -18,4 +18,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'posts', 'url')
+        fields = ('username', 'posts')
