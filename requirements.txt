@@ -26,7 +26,7 @@ psycopg2==2.5.1
 South==0.8.2
 
 # Rest frameworks
-djangorestframework==2.3.8
+djangorestframework==3.9.1
 Markdown==2.3.1                     # Markdown support for the browsable API.
 django-filter==0.7                  # Filtering support
 pygments==1.6                       # We'll be using this for the code highlighting
