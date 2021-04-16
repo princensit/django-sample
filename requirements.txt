@@ -17,7 +17,7 @@ pyflakes==0.7.3
 pylint==1.0.0
 
 # Debugging
-django-debug-toolbar==0.10.2
+django-debug-toolbar==1.11.1
 
 # Database adapter
 psycopg2==2.5.1
